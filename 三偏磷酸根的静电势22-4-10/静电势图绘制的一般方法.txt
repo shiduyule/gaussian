@@ -1,0 +1,33 @@
+0  2 
+
+-3  4
+
+画好分子图之后一定要记得保存一遍  再进行计算设置
+
+一.
+	1. 用gaussian view 画出分子结构
+
+	2. 右键 calculation --> gaussian calculation setup 
+   	job type 选择 opt+frequency
+   	method 选择 ground state   DFT(失败了)
+                                                  	            Hartree-Fork   restricted
+                 basis set 默认即可
+                 charge   -3  spin 选择 singlet
+   	job title  随便写个任务名
+   	link     都选择默认值即可
+  	设置完  选择 retain 保存
+
+	3. file --> save  或者 ctrl + S
+二.
+	1.打开gaussian 将 gif 文件 拖入其中-->点击运行--> 设置保存位置  
+三.
+	1.生成的chk 文件 用 gaussian view 打开   
+	2. result --> surfaces/contours -->cubic actions(new cubic) --> total density  默认 SCF
+		                                        surface available 选择 new mapped surface   默认 ESP SCF		
+      	3.view -->  display format --> surface-->transparent
+file --> save image File
+
+   
+
+
+
